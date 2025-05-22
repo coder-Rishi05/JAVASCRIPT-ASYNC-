@@ -10,7 +10,8 @@
 6. Interviews
 7. Asunc await vs promise .then and .catch
 ```
-``` # Basic questions
+# Basic questions
+```
   1. What is async await. 
 
   it is a keyword used with functions diffrent then normal functions. It's a asynchronous function.
