@@ -2,30 +2,30 @@
 
 
 
-// // // const p = new Promise((res,req)=>{
-// // //     res("primise resolved value")
-// // // })
+ const p = new Promise((res,req)=>{
+     res("primise resolved value")
+ })
 
-// // // async function getData() {
-// // //     // return 'json';
-// // //     return p;
-// // // }
+ async function getData() {
+     // return 'json';
+     return p;
+ }
 
-// // // const data = getData()
-// // // console.log(data)
-// // // /**
-// // //  * output:
-// // //  *
-// // //  * Promise {<fulfilled>: 'json'}
-// // //  * [[Prototype]]: Promise
-// // //  * [[PromiseState]]: "fulfilled"
-// // //  * [[PromiseResult]]: "json"
-// // //  *
-// // //  */
-// // // // to get the output of data
-// // // data.then(res=>console.log(res)); // output => json
+ const data = getData()
+ console.log(data)
+ /**
+  * output:
+  *
+ * Promise {<fulfilled>: 'json'}
+ * [[Prototype]]: Promise
+ * [[PromiseState]]: "fulfilled"
+ * [[PromiseResult]]: "json"
+ *
+ */
+// to get the output of data
+data.then(res=>console.log(res)); // output => json
 
-// // // }
+}
 
 // // // {
 // // //     // using await
