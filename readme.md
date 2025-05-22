@@ -10,7 +10,26 @@
 6. Interviews
 7. Asunc await vs promise .then and .catch
 ```
+``` # Basic questions
+  1. What is async await. 
 
+  it is a keyword used with functions diffrent then normal functions. It's a asynchronous function.
+  await is also a keyword used inside async function to handle promises which is given by fetch call inside it. 
+
+  explain multiple promise handling like which take diffrent times. 
+
+  async await vs promise then/catch
+
+  async await is a synthetic sugar (syntaxical sugar) over then and catch. 
+  behind the scene js is using its own .then() and  .catch() methods of api handling
+
+  what is better
+  both are better and async is a new way of writing code.
+
+
+
+
+```
 
 ```
 Async function call
