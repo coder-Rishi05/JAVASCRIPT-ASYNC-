@@ -1,8 +1,4 @@
-
-
-
-
- const p = new Promise((res,req)=>{
+const p = new Promise((res,req)=>{
      res("primise resolved value")
  })
 
@@ -23,38 +19,38 @@
  *
  */
 // to get the output of data
-data.then(res=>console.log(res)); // output => json
+// data.then(res=>console.log(res)); // output => json
 
 }
 
-// // // {
-// // //     // using await
-// // //     // async and await combo is used to handle promises.
-// // //     // await is a keyword that can only be used inside an async function.
+ {
+     // using await
+     // async and await combo is used to handle promises.
+     // await is a keyword that can only be used inside an async function.
 
-// // //     // how does we handle promises before
+     // how does we handle promises before
 
-// // //     const p = new Promise((res,rej)=>{
-// // //         res("Promise value after ressolved")
-// // //     })
+     const p = new Promise((res,rej)=>{
+         res("Promise value after ressolved")
+     })
 
-// // //     function getData(){
-// // //         p.then(res => console.log(res))
-// // //     }
-// // //     getData()
+     function getData(){
+         p.then(res => console.log(res))
+     }
+     getData()
 
-// // //     // now how we handle promises after aysnc await ?
+     // now how we handle promises after aysnc await ?
 
-// // //     async function handlePromice() {
-// // //        const val = await p;
-// // //        console.log(val)
-// // //     }
+     async function handlePromice() {
+        const val = await p;
+        console.log(val)
+     }
 
-// // //     handlePromice()
+     handlePromice()
 
-// // //     // console.log(val)
+     // console.log(val)
 
-// // // }
+ }
 
 // // {
 // //   // normal oolder way of promise handling
