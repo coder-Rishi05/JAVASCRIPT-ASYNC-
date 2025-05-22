@@ -24,11 +24,7 @@ const p = new Promise((res,req)=>{
 }
 
  {
-     // using await
-     // async and await combo is used to handle promises.
-     // await is a keyword that can only be used inside an async function.
-
-     // how does we handle promises before
+       // how does we handle promises before
 
      const p = new Promise((res,rej)=>{
          res("Promise value after ressolved")
