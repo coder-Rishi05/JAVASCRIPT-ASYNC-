@@ -15,7 +15,10 @@
   1. What is async await. 
 
   it is a keyword used with functions diffrent then normal functions. It's a asynchronous function.
-  await is also a keyword used inside async function to handle promises which is given by fetch call inside it. 
+  await is also a keyword used inside async function to handle promises which is given by fetch call inside it.
+
+ async and await combo is used to handle promises.
+ await is a keyword that can only be used inside an async function.
 
   explain multiple promise handling like which take diffrent times. 
 
@@ -56,5 +59,7 @@ console.log(json)
  
 
   returning a promise
+
+
 
 ```
