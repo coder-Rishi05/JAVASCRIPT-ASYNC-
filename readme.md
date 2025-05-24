@@ -60,6 +60,31 @@ console.log(json)
 
   returning a promise
 
+```
+
+```
+{
+  // normal older way of promise handling
+
+  const p = new Promise((res, rej) => {
+    setTimeout(() => {
+      res("promise ressolved p1 -> 5s ");
+    }, 5000);
+  });
+
+  const p1 = new Promise((res, rej) => {
+    setTimeout(() => {
+      res("promise ressolved p2 -> 10s");
+    }, 10000);
+  });
+
+   function getData(){
+       // js engine will not wait for promise to ressolve here. It will print first the NJ then the promise will printed
+       p.then(res => console.log(res));
+       console.log("NJ")
+   }
+
+   getData()
 
 
 ```
