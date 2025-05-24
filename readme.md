@@ -168,9 +168,12 @@ console.log(json)
 
 // handlePromise();
 
-// // in case of first Promise taking more time than second Promice wcwn in that situation both function will wait for till higher time promise not completed. the low time promise was completed in 5s but still wait for 10s to other promise.
+// // in case of first Promise taking more time than second Promice then in that situation both function will wait for till higher time promise not completed.
+the low time promise was completed in 5s but still wait for 10s to other promise.
 
-// // but if low time called first it will be invoked first.
+// // but if low time called first it will be invoked first the handle promise function will be suspend till the first promise time is not end.
+Once the time end it will come again to call stack.
 
 // // inside callstack
+
 ```
