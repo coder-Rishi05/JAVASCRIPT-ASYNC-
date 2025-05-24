@@ -23,56 +23,7 @@ const p = new Promise((res,req)=>{
 
 }
 
- {
-       // how does we handle promises before
-
-     const p = new Promise((res,rej)=>{
-         res("Promise value after ressolved")
-     })
-
-     function getData(){
-         p.then(res => console.log(res))
-     }
-     getData()
-
-     // now how we handle promises after aysnc await ?
-
-     async function handlePromice() {
-        const val = await p;
-        console.log(val)
-     }
-
-     handlePromice()
-
-     // console.log(val)
-
- }
-
-
-// //   // async amd await way of promise handling
-// //   // in async await the NJ will wait for the async function to complete it data loading first then it will called
-
-// //   async function handlePromice() {
-// //     console.log("this will printed before the promise ressolve");
-// //     const val = await p;
-// //     console.log("this will printed after the promise ressolve : val 1");
-// //     console.log(val);
-
-// //     // here in case of val2 and val both will ressolve at the same time.
-// //     // and case of 2 promises there aync function will wait for the longer time promise and all will be print together,
-// //     console.log("this will printed before the promise ressolve");
-// //     const val2 = await p1;
-// //     console.log("this will printed after the promise ressolve : val 2");
-// //     console.log(val2);
-// //     // return data
-// //   }
-
-// //   handlePromice();
-// // }
-
-// // /**
-// //  * In case of if the time of first promise is low (5s) then second (10s) promise it will load synchromiously first p1 then p2.
-// //  */
+ 
 
 // const p1 = new Promise((res, rej) => {
 //   setTimeout(() => {
