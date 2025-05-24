@@ -48,27 +48,6 @@ const p = new Promise((res,req)=>{
 
  }
 
-// // {
-// //   // normal oolder way of promise handling
-
-// //   const p = new Promise((res, rej) => {
-// //     setTimeout(() => {
-// //       res("promise ressolved p1 -> 5s ");
-// //     }, 5000);
-// //   });
-// //   const p1 = new Promise((res, rej) => {
-// //     setTimeout(() => {
-// //       res("promise ressolved p2 -> 10s");
-// //     }, 10000);
-// //   });
-
-// //   // function getData(){
-// //   //     // js engine will not wait for promise to ressolve here. It will print first the NJ then the promise will printed
-// //   //     p.then(res => console.log(res));
-// //   //     console.log("NJ")
-// //   // }
-
-// //   // getData()
 
 // //   // async amd await way of promise handling
 // //   // in async await the NJ will wait for the async function to complete it data loading first then it will called
