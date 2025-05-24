@@ -142,3 +142,35 @@ console.log(json)
  */
 
 ```
+
+```
+// const p1 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("Promise of p1 ressolves");
+//   }, 20000);
+// });
+
+// const p2 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("Promise ressolved of p2");
+//   }, 30000);
+// });
+
+// const handlePromise = async () => {
+//   console.log("hello World : ");
+
+//   const data = await p1;
+//   console.log(data);
+
+//   const data2 = await p2;
+//   console.log(data2);
+// };
+
+// handlePromise();
+
+// // in case of first Promise taking more time than second Promice wcwn in that situation both function will wait for till higher time promise not completed. the low time promise was completed in 5s but still wait for 10s to other promise.
+
+// // but if low time called first it will be invoked first.
+
+// // inside callstack
+```
